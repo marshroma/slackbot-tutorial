@@ -14,7 +14,7 @@ def sendMessage(slack_client, msg):
   # check if the request was a success
   try:
     slack_client.chat_postMessage(
-      channel='#test',
+      channel='#marsh_test',
       text=msg
     )#.get()
   except SlackApiError as e:
